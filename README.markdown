@@ -24,9 +24,9 @@ import "afix-dialog"`
 
 ### Attributes
 
-|Name|Description|Default|
-|-|-|-|
-|open|Whether or not the dialog is visible|Unset|
+| Name | Description                          | Default |
+| ---- | ------------------------------------ | ------- |
+| open | Whether or not the dialog is visible | Unset   |
 
 ### DialogElement
 
@@ -50,12 +50,12 @@ Emitted when the dialog is closed
 
 Emitted when the dialog is opened
 
-### Custom Properties (CSS)
+### CSS Custom Properties
 
 Remember **all custom properties are prefixed with the component name**. e.g. `background-color` is `--afix-dialog-background-color`.
 
-|Name|Description|Default|
-|-|-|-|
-|background-color|The background of the dialog|rgba(0,0,0,0.9)|
-|transition-duration|The amount of time the in/out transition takes|200ms|
-|transition-easing|The easing function used when showing the dialog|ease-in-out|
+| Name                | Description                                      | Default         |
+| ------------------- | ------------------------------------------------ | --------------- |
+| background-color    | The background of the dialog                     | rgba(0,0,0,0.9) |
+| transition-duration | The amount of time the in/out transition takes   | 200ms           |
+| transition-easing   | The easing function used when showing the dialog | ease-in-out     |
