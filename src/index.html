@@ -4,9 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Example</title>
-    <script src="src/Component.js" type="module"></script>
+    <script src="./Component.js" type="module"></script>
+    <style>
+      afix-dialog {
+        --afixDialogBackground: red;
+      }
+    </style>
   </head>
   <body>
-    <afix-dialog />
+    <afix-dialog>
+      <p>Hello world</p>
+    </afix-dialog>
   </body>
 </html>
