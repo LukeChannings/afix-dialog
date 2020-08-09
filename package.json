@@ -25,6 +25,7 @@
     "@babel/plugin-transform-modules-commonjs": "^7.10.4",
     "babel-jest": "^26.2.2",
     "eslint": "^7.6.0",
+    "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-jest-playwright": "^0.2.1",
     "jest": "^26.2.2",
     "jest-playwright": "0.0.1",
@@ -33,6 +34,7 @@
     "playwright": "^1.3.0",
     "prettier": "^2.0.5",
     "stylelint": "^13.6.1",
+    "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-no-unsupported-browser-features": "^4.0.0",
     "typescript": "^3.9.7"
@@ -48,7 +50,8 @@
     },
     "extends": [
       "eslint:recommended",
-      "plugin:jest-playwright/recommended"
+      "plugin:jest-playwright/recommended",
+      "prettier"
     ],
     "parserOptions": {
       "ecmaVersion": 11,
@@ -57,7 +60,8 @@
   },
   "stylelint": {
     "extends": [
-      "stylelint-config-standard"
+      "stylelint-config-standard",
+      "stylelint-config-prettier"
     ]
   },
   "browserslist": [

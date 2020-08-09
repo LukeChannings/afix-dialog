@@ -43,8 +43,8 @@ export default class DialogElement extends HTMLElement {
     }
 
     if (this.children.length) {
-      this.childrenContainer = document.createElement('div')
-      this.childrenContainer.classList.add('children')
+      this.childrenContainer = document.createElement("div");
+      this.childrenContainer.classList.add("children");
       for (const child of this.children) {
         this.childrenContainer.appendChild(child);
       }
