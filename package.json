@@ -1,7 +1,7 @@
 {
-  "name": "name-afix-component",
+  "name": "afix-dialog",
   "version": "1.0.0",
-  "description": "description-afix-component",
+  "description": "A Web Component for presenting a modal dialog",
   "main": "src/Component.js",
   "module": "src/Component.js",
   "type": "module",
