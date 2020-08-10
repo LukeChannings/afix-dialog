@@ -11,7 +11,7 @@
     "lint": "run-p lint:*",
     "lint:js": "eslint src",
     "lint:css": "stylelint --syntax html '**/*.js'",
-    "lint:ts": "tsc --noEmit",
+    "lint:ts": "tsc",
     "lint:style": "prettier --ignore-path .gitignore  '**/*.{js,css,json,html,yaml}' --check",
     "format": "prettier --ignore-path .gitignore  '**/*.{js,css,json,html,yaml}' --write"
   },
