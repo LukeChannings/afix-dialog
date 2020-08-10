@@ -2,3 +2,4 @@
 *.swp
 *.code-workspace
 node_modules
+.d.ts

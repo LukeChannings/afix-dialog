@@ -25,9 +25,12 @@ const template = html`
   </style>
 `;
 
-export default class DialogElement extends HTMLElement {
+export class DialogElement extends HTMLElement {
   constructor() {
     super();
+
+    /** @type {boolean} */
+    this.open = false;
 
     this.attachShadow({ mode: "open" }).appendChild(
       template.content.cloneNode(true)
@@ -55,6 +58,7 @@ export default class DialogElement extends HTMLElement {
     if (this.childrenContainer) {
       this.dialog.appendChild(this.childrenContainer);
 
+      this.open = true;
       this.dispatchEvent(new Event("show"));
     }
   }
@@ -63,6 +67,7 @@ export default class DialogElement extends HTMLElement {
     if (this.childrenContainer) {
       this.dialog.removeChild(this.childrenContainer);
 
+      this.open = false;
       this.dispatchEvent(new Event("close"));
     }
   }
@@ -89,7 +94,11 @@ export default class DialogElement extends HTMLElement {
   }
 }
 
-customElements.define("afix-dialog", DialogElement);
+export default DialogElement;
+
+if (!customElements.get('afix-dialog')) {
+  customElements.define("afix-dialog", DialogElement);
+}
 
 /**
  * makeTemplate is a template tag used to construct a <template>.
