@@ -96,7 +96,7 @@ export class DialogElement extends HTMLElement {
 
 export default DialogElement;
 
-if (!customElements.get('afix-dialog')) {
+if (!customElements.get("afix-dialog")) {
   customElements.define("afix-dialog", DialogElement);
 }
 
