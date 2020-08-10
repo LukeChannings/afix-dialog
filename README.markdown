@@ -27,6 +27,7 @@ import "afix-dialog"`
 | Name | Description                          | Default |
 | ---- | ------------------------------------ | ------- |
 | open | Whether or not the dialog is visible | Unset   |
+| for  | The ID of a button to be opened by   | Unset   |
 
 ### DialogElement
 
@@ -54,8 +55,8 @@ Emitted when the dialog is opened
 
 Remember **all custom properties are prefixed with the component name**. e.g. `background-color` is `--afix-dialog-background-color`.
 
-| Name                | Description                                      | Default         |
-| ------------------- | ------------------------------------------------ | --------------- |
-| background-color    | The background of the dialog                     | rgba(0,0,0,0.9) |
-| transition-duration | The amount of time the in/out transition takes   | 200ms           |
-| transition-easing   | The easing function used when showing the dialog | ease-in-out     |
+| Name                | Description                                      | Default                        |
+| ------------------- | ------------------------------------------------ | ------------------------------ |
+| background-color    | The background of the dialog                     | rgba(0, 0, 0, 0.75)            |
+| transition-duration | The amount of time the in/out transition takes   | 150ms                          |
+| transition-easing   | The easing function used when showing the dialog | cubic-bezier(0.61, 1, 0.88, 1) |

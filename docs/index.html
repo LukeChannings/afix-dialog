@@ -5,15 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Example</title>
     <script src="../src/Component.js" type="module"></script>
-    <style>
-      afix-dialog {
-        --afixDialogBackground: red;
-      }
-    </style>
   </head>
   <body>
-    <afix-dialog>
-      <p>Hello world</p>
+    <button id="modalButton" type="button">Open Modal</button>
+    <afix-dialog for="modalButton">
+      <p slot="content">Hello world</p>
     </afix-dialog>
   </body>
 </html>
