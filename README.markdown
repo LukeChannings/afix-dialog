@@ -29,6 +29,12 @@ import "afix-dialog"`
 | open | Whether or not the dialog is visible | Unset   |
 | for  | The ID of a button to be opened by   | Unset   |
 
+### Slots
+
+| Name    | Description                | Default |
+| ------- | -------------------------- | ------- |
+| content | The contents of the dialog | Unset   |
+
 ### DialogElement
 
 #### Methods
