@@ -11,7 +11,7 @@ const template = html`
       height: 100vh;
       z-index: 1;
       background: var(--afix-dialog-background-color, rgba(0, 0, 0, 0.75));
-      transform: translateX(-100vh);
+      transform: translateX(-100vw);
       opacity: 0;
       transition: opacity var(--afix-dialog-transition-duration, 150ms)
         var(--afix-dialog-transition-easing, cubic-bezier(0.61, 1, 0.88, 1));
